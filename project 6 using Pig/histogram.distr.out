@@ -1,0 +1,1722 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/varshini/32668654
+myHadoop: Using JAVA_HOME=/lib/jvm/java
+myHadoop: Generating Hadoop configuration in directory in /home/varshini/cometcluster...
+myHadoop: Backing up old config dir to /home/varshini/cometcluster.29...
+‘/home/varshini/cometcluster’ -> ‘/home/varshini/cometcluster.29’
+myHadoop: Designating comet-19-12.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-19-12.ibnet
+comet-19-15.ibnet
+20/04/16 10:13:50 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-19-12.sdsc.edu/198.202.119.67
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/varshini/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_212
+************************************************************/
+20/04/16 10:13:50 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+20/04/16 10:13:50 INFO namenode.NameNode: createNameNode [-format]
+20/04/16 10:13:51 WARN common.Util: Path /scratch/varshini/32668654/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+20/04/16 10:13:51 WARN common.Util: Path /scratch/varshini/32668654/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-c9ac4bc9-a33d-47fa-8b0a-cee293e5bc6f
+20/04/16 10:13:51 INFO namenode.FSNamesystem: No KeyProvider found.
+20/04/16 10:13:51 INFO namenode.FSNamesystem: fsLock is fair:true
+20/04/16 10:13:51 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+20/04/16 10:13:51 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: The block deletion will start around 2020 Apr 16 10:13:51
+20/04/16 10:13:51 INFO util.GSet: Computing capacity for map BlocksMap
+20/04/16 10:13:51 INFO util.GSet: VM type       = 64-bit
+20/04/16 10:13:51 INFO util.GSet: 2.0% max memory 889 MB = 17.8 MB
+20/04/16 10:13:51 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: defaultReplication         = 3
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: maxReplication             = 512
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: minReplication             = 1
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+20/04/16 10:13:51 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+20/04/16 10:13:51 INFO namenode.FSNamesystem: fsOwner             = varshini (auth:SIMPLE)
+20/04/16 10:13:51 INFO namenode.FSNamesystem: supergroup          = supergroup
+20/04/16 10:13:51 INFO namenode.FSNamesystem: isPermissionEnabled = true
+20/04/16 10:13:51 INFO namenode.FSNamesystem: HA Enabled: false
+20/04/16 10:13:51 INFO namenode.FSNamesystem: Append Enabled: true
+20/04/16 10:13:51 INFO util.GSet: Computing capacity for map INodeMap
+20/04/16 10:13:51 INFO util.GSet: VM type       = 64-bit
+20/04/16 10:13:51 INFO util.GSet: 1.0% max memory 889 MB = 8.9 MB
+20/04/16 10:13:51 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+20/04/16 10:13:51 INFO namenode.NameNode: Caching file names occuring more than 10 times
+20/04/16 10:13:51 INFO util.GSet: Computing capacity for map cachedBlocks
+20/04/16 10:13:51 INFO util.GSet: VM type       = 64-bit
+20/04/16 10:13:51 INFO util.GSet: 0.25% max memory 889 MB = 2.2 MB
+20/04/16 10:13:51 INFO util.GSet: capacity      = 2^18 = 262144 entries
+20/04/16 10:13:51 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+20/04/16 10:13:51 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+20/04/16 10:13:51 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+20/04/16 10:13:51 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+20/04/16 10:13:51 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+20/04/16 10:13:51 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+20/04/16 10:13:51 INFO util.GSet: VM type       = 64-bit
+20/04/16 10:13:51 INFO util.GSet: 0.029999999329447746% max memory 889 MB = 273.1 KB
+20/04/16 10:13:51 INFO util.GSet: capacity      = 2^15 = 32768 entries
+20/04/16 10:13:51 INFO namenode.NNConf: ACLs enabled? false
+20/04/16 10:13:51 INFO namenode.NNConf: XAttrs enabled? true
+20/04/16 10:13:51 INFO namenode.NNConf: Maximum size of an xattr: 16384
+20/04/16 10:13:51 INFO namenode.FSImage: Allocated new BlockPoolId: BP-1007223120-198.202.119.67-1587057231526
+20/04/16 10:13:51 INFO common.Storage: Storage directory /scratch/varshini/32668654/namenode_data has been successfully formatted.
+20/04/16 10:13:51 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+20/04/16 10:13:51 INFO util.ExitUtil: Exiting with status 0
+20/04/16 10:13:51 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-19-12.sdsc.edu/198.202.119.67
+************************************************************/
+Starting namenodes on [comet-19-12.ibnet]
+comet-19-12.ibnet: starting namenode, logging to /scratch/varshini/32668654/logs/hadoop-varshini-namenode-comet-19-12.sdsc.edu.out
+comet-19-12.ibnet: starting datanode, logging to /scratch/varshini/32668654/logs/hadoop-varshini-datanode-comet-19-12.sdsc.edu.out
+comet-19-15.ibnet: starting datanode, logging to /scratch/varshini/32668654/logs/hadoop-varshini-datanode-comet-19-15.sdsc.edu.out
+Starting secondary namenodes [comet-19-12.ibnet]
+comet-19-12.ibnet: starting secondarynamenode, logging to /scratch/varshini/32668654/logs/hadoop-varshini-secondarynamenode-comet-19-12.sdsc.edu.out
+starting yarn daemons
+starting resourcemanager, logging to /scratch/varshini/32668654/logs/yarn-varshini-resourcemanager-comet-19-12.out
+comet-19-12.ibnet: starting nodemanager, logging to /scratch/varshini/32668654/logs/yarn-varshini-nodemanager-comet-19-12.sdsc.edu.out
+comet-19-15.ibnet: starting nodemanager, logging to /scratch/varshini/32668654/logs/yarn-varshini-nodemanager-comet-19-15.sdsc.edu.out
+chown: changing ownership of ‘/tmp’: Operation not permitted
+starting historyserver, logging to /tmp/mapred-varshini-historyserver-comet-19-12.out
+20/04/16 10:14:22 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+20/04/16 10:14:22 INFO pig.ExecTypeProvider: Trying ExecType : MAPREDUCE
+20/04/16 10:14:22 INFO pig.ExecTypeProvider: Picked MAPREDUCE as the ExecType
+2020-04-16 10:14:22,129 [main] INFO  org.apache.pig.Main - Apache Pig version 0.16.0 (r1746530) compiled Jun 01 2016, 23:10:49
+2020-04-16 10:14:22,129 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/varshini/project6/pig_1587057262128.log
+2020-04-16 10:14:22,434 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/varshini/.pigbootup not found
+2020-04-16 10:14:22,513 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2020-04-16 10:14:22,514 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:22,514 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://comet-19-12.ibnet:54310
+2020-04-16 10:14:22,875 [main] INFO  org.apache.pig.PigServer - Pig Script ID for the session: PIG-histogram.pig-715b62f0-79e8-4aa2-9716-148ae9a05286
+2020-04-16 10:14:22,875 [main] WARN  org.apache.pig.PigServer - ATS is disabled since yarn.timeline-service.enabled set to false
+2020-04-16 10:14:23,337 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,405 [main] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
+2020-04-16 10:14:23,474 [main] WARN  org.apache.pig.newplan.BaseOperatorPlan - Encountered Warning IMPLICIT_CAST_TO_LONG 9 time(s).
+2020-04-16 10:14:23,484 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: GROUP_BY,DISTINCT,UNION
+2020-04-16 10:14:23,507 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,509 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2020-04-16 10:14:23,532 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
+2020-04-16 10:14:23,584 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,601 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,615 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,631 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,646 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,659 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,672 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,685 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,697 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,753 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2020-04-16 10:14:23,764 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.CombinerOptimizerUtil - Choosing to move algebraic foreach to combiner
+2020-04-16 10:14:23,781 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 3
+2020-04-16 10:14:23,783 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - Merged 1 diamond splitter.
+2020-04-16 10:14:23,783 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - Merged 1 out of total 2 MR operators.
+2020-04-16 10:14:23,783 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 2
+2020-04-16 10:14:23,798 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:23,814 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:14:23,937 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2020-04-16 10:14:23,941 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
+2020-04-16 10:14:23,941 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2020-04-16 10:14:23,941 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+2020-04-16 10:14:23,943 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2020-04-16 10:14:23,944 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2020-04-16 10:14:23,951 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=963974400
+2020-04-16 10:14:23,951 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2020-04-16 10:14:23,951 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2020-04-16 10:14:23,952 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2020-04-16 10:14:23,961 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.submit.replication is deprecated. Instead, use mapreduce.client.submit.file.replication
+2020-04-16 10:14:24,123 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/pig-0.16.0-core-h2.jar to DistributedCache through /tmp/temp-2073863482/tmp-1161824799/pig-0.16.0-core-h2.jar
+2020-04-16 10:14:24,137 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp-2073863482/tmp1249803121/automaton-1.11-8.jar
+2020-04-16 10:14:24,149 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp-2073863482/tmp1876526757/antlr-runtime-3.4.jar
+2020-04-16 10:14:24,162 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/joda-time-2.9.3.jar to DistributedCache through /tmp/temp-2073863482/tmp-438029065/joda-time-2.9.3.jar
+2020-04-16 10:14:24,169 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2020-04-16 10:14:24,172 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2020-04-16 10:14:24,172 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2020-04-16 10:14:24,172 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2020-04-16 10:14:24,232 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2020-04-16 10:14:24,233 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker.http.address is deprecated. Instead, use mapreduce.jobtracker.http.address
+2020-04-16 10:14:24,236 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:14:24,244 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2020-04-16 10:14:24,244 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:14:24,334 [JobControl] WARN  org.apache.hadoop.mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2020-04-16 10:14:24,350 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2020-04-16 10:14:24,353 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-16 10:14:24,353 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2020-04-16 10:14:24,373 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 3
+2020-04-16 10:14:24,375 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2020-04-16 10:14:24,377 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-16 10:14:24,377 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2020-04-16 10:14:24,378 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 3
+2020-04-16 10:14:24,379 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2020-04-16 10:14:24,381 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-16 10:14:24,381 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2020-04-16 10:14:24,382 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 3
+2020-04-16 10:14:24,414 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:9
+2020-04-16 10:14:24,493 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1587057250120_0001
+2020-04-16 10:14:24,588 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2020-04-16 10:14:24,719 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1587057250120_0001
+2020-04-16 10:14:24,745 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://comet-19-12.ibnet:8088/proxy/application_1587057250120_0001/
+2020-04-16 10:14:24,745 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1587057250120_0001
+2020-04-16 10:14:24,745 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases H,K,O1,O2,O3,O4,U,by_counter
+2020-04-16 10:14:24,745 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: H[1,4],O1[-1,-1],O4[5,5],U[6,4],K[8,4],by_counter[7,13],H[1,4],O1[-1,-1],O2[3,5],H[1,4],O1[-1,-1],O3[4,5] C: K[8,4],by_counter[7,13] R: K[8,4]
+2020-04-16 10:14:24,751 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2020-04-16 10:14:24,751 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0001]
+2020-04-16 10:14:46,808 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 4% complete
+2020-04-16 10:14:46,809 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0001]
+2020-04-16 10:15:01,825 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 9% complete
+2020-04-16 10:15:01,825 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0001]
+2020-04-16 10:15:11,834 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 13% complete
+2020-04-16 10:15:11,834 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0001]
+2020-04-16 10:15:19,842 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 17% complete
+2020-04-16 10:15:19,842 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0001]
+2020-04-16 10:15:46,866 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 21% complete
+2020-04-16 10:15:46,867 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0001]
+2020-04-16 10:15:51,871 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 25% complete
+2020-04-16 10:15:51,871 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0001]
+2020-04-16 10:15:54,373 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 50% complete
+2020-04-16 10:15:54,373 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0001]
+2020-04-16 10:15:59,882 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:15:59,888 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:00,483 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:00,487 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:00,529 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:00,531 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:00,566 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2020-04-16 10:16:00,566 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2020-04-16 10:16:00,567 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2020-04-16 10:16:00,567 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2020-04-16 10:16:00,573 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=10874
+2020-04-16 10:16:00,574 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2020-04-16 10:16:00,574 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2020-04-16 10:16:00,613 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/pig-0.16.0-core-h2.jar to DistributedCache through /tmp/temp-2073863482/tmp-1515378498/pig-0.16.0-core-h2.jar
+2020-04-16 10:16:00,625 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp-2073863482/tmp1677109297/automaton-1.11-8.jar
+2020-04-16 10:16:00,635 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp-2073863482/tmp-1480433443/antlr-runtime-3.4.jar
+2020-04-16 10:16:00,647 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/joda-time-2.9.3.jar to DistributedCache through /tmp/temp-2073863482/tmp-1310884886/joda-time-2.9.3.jar
+2020-04-16 10:16:00,648 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2020-04-16 10:16:00,649 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2020-04-16 10:16:00,649 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2020-04-16 10:16:00,649 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2020-04-16 10:16:00,649 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting identity combiner class.
+2020-04-16 10:16:00,658 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2020-04-16 10:16:00,660 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:00,665 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:00,674 [JobControl] WARN  org.apache.hadoop.mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2020-04-16 10:16:00,685 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-16 10:16:00,685 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2020-04-16 10:16:00,685 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2020-04-16 10:16:00,704 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2020-04-16 10:16:00,722 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1587057250120_0002
+2020-04-16 10:16:00,724 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2020-04-16 10:16:00,736 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1587057250120_0002
+2020-04-16 10:16:00,739 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://comet-19-12.ibnet:8088/proxy/application_1587057250120_0002/
+2020-04-16 10:16:01,159 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1587057250120_0002
+2020-04-16 10:16:01,159 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases 
+2020-04-16 10:16:01,159 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M:  C:  R: 
+2020-04-16 10:16:08,199 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 75% complete
+2020-04-16 10:16:08,199 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0002]
+2020-04-16 10:16:13,203 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0002]
+2020-04-16 10:16:16,208 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,212 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:16,263 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,267 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:16,287 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,290 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:16,308 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2020-04-16 10:16:16,316 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.SimplePigStats - Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+2.6.0	0.16.0	varshini	2020-04-16 10:14:23	2020-04-16 10:16:16	GROUP_BY,DISTINCT,UNION
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Maps	Reduces	MaxMapTime	MinMapTime	AvgMapTime	MedianMapTime	MaxReduceTime	MinReduceTime	AvgReduceTime	MedianReducetime	Alias	Feature	Outputs
+job_1587057250120_0001	9	1	81	31	65	80	48	48	48	48	H,K,O1,O2,O3,O4,U,by_counter	GROUP_BY,COMBINER	
+job_1587057250120_0002	1	1	1	1	1	1	2	2	2	2		DISTINCT	hdfs://comet-19-12.ibnet:54310/tmp/temp-2073863482/tmp-660499216,
+
+Input(s):
+Successfully read 30000000 records from: "/user/varshini/pixels-large.txt"
+Successfully read 30000000 records from: "/user/varshini/pixels-large.txt"
+Successfully read 30000000 records from: "/user/varshini/pixels-large.txt"
+
+Output(s):
+Successfully stored 768 records (10874 bytes) in: "hdfs://comet-19-12.ibnet:54310/tmp/temp-2073863482/tmp-660499216"
+
+Counters:
+Total records written : 768
+Total bytes written : 10874
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_1587057250120_0001	->	job_1587057250120_0002,
+job_1587057250120_0002
+
+
+2020-04-16 10:16:16,316 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,319 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:16,349 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,351 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:16,369 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,371 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:16,391 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,394 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:16,411 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,413 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:16,429 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,432 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:16:16,449 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+2020-04-16 10:16:16,451 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,452 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2020-04-16 10:16:16,455 [main] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-16 10:16:16,455 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+((2,2),117084)
+((2,3),117468)
+((2,4),116922)
+((2,5),117084)
+((2,6),117331)
+((2,7),117633)
+((2,8),117429)
+((2,9),117538)
+((2,10),117473)
+((2,11),117151)
+((2,12),117545)
+((2,13),117185)
+((2,14),117292)
+((2,15),116833)
+((2,16),117174)
+((2,17),116987)
+((2,18),117292)
+((2,19),117191)
+((2,20),117319)
+((2,21),117012)
+((2,22),117406)
+((2,23),117282)
+((2,24),117222)
+((2,25),117480)
+((2,26),117299)
+((2,27),117101)
+((2,28),117349)
+((2,29),117225)
+((2,30),117572)
+((2,31),117302)
+((2,32),117097)
+((2,33),117556)
+((2,34),117221)
+((2,35),117191)
+((2,36),116977)
+((2,37),117501)
+((2,38),117154)
+((2,39),117141)
+((2,40),116890)
+((2,41),117023)
+((2,42),117249)
+((2,43),117115)
+((2,44),117501)
+((2,45),117148)
+((2,46),117110)
+((2,47),117390)
+((2,48),117549)
+((2,49),117117)
+((2,50),117882)
+((2,51),116666)
+((2,52),116893)
+((2,53),117322)
+((2,54),117263)
+((2,55),116571)
+((2,56),116998)
+((2,57),117086)
+((2,58),117257)
+((2,59),117010)
+((2,60),117473)
+((2,61),117830)
+((2,62),117151)
+((2,63),116976)
+((2,64),117125)
+((2,65),117557)
+((2,66),116958)
+((2,67),117370)
+((2,68),117066)
+((2,69),117196)
+((2,70),117185)
+((2,71),116887)
+((2,72),116952)
+((2,73),117590)
+((2,74),117304)
+((2,75),117173)
+((2,76),117112)
+((2,77),116914)
+((2,78),117228)
+((2,79),117113)
+((2,80),117447)
+((2,81),116755)
+((2,82),117069)
+((2,83),117113)
+((2,84),117288)
+((2,85),117546)
+((2,86),117144)
+((2,87),117646)
+((2,88),117069)
+((2,89),117018)
+((2,90),117070)
+((2,91),117083)
+((2,92),116871)
+((2,93),116841)
+((2,94),116784)
+((2,95),117502)
+((2,96),117450)
+((2,97),117511)
+((2,98),116908)
+((2,99),117353)
+((2,100),117158)
+((2,101),117520)
+((2,102),117226)
+((2,103),117526)
+((2,104),117013)
+((2,105),116995)
+((2,106),117131)
+((2,107),117237)
+((2,108),117762)
+((2,109),117387)
+((2,110),117217)
+((2,111),117288)
+((2,112),116738)
+((2,113),117384)
+((2,114),117324)
+((2,115),117025)
+((2,116),116937)
+((2,117),117567)
+((2,118),117200)
+((2,119),117056)
+((2,120),117047)
+((2,121),117200)
+((2,122),117136)
+((2,123),117337)
+((2,124),117415)
+((2,125),117219)
+((2,126),117319)
+((2,127),117284)
+((2,128),117128)
+((2,129),116891)
+((2,130),117357)
+((2,131),117244)
+((2,132),117178)
+((2,133),117131)
+((2,134),117136)
+((2,135),117556)
+((2,136),117393)
+((2,137),117291)
+((2,138),117108)
+((2,139),116930)
+((2,140),117113)
+((2,141),117237)
+((2,142),116762)
+((2,143),116994)
+((2,144),117962)
+((2,145),117034)
+((2,146),117286)
+((2,147),116943)
+((2,148),116659)
+((2,149),117116)
+((2,150),117343)
+((2,151),117079)
+((2,152),117296)
+((2,153),116909)
+((2,154),117240)
+((2,155),116762)
+((2,156),117235)
+((2,157),116932)
+((2,158),117373)
+((2,159),116992)
+((2,160),116907)
+((2,161),117157)
+((2,162),117628)
+((2,163),117328)
+((2,164),117533)
+((2,165),117178)
+((2,166),117229)
+((2,167),117350)
+((2,168),117320)
+((2,169),116852)
+((2,170),117174)
+((2,171),116769)
+((2,172),116957)
+((2,173),117288)
+((2,174),117255)
+((2,175),117576)
+((2,176),116766)
+((2,177),117166)
+((2,178),117003)
+((2,179),117611)
+((2,180),117346)
+((2,181),117093)
+((2,182),117312)
+((2,183),116747)
+((2,184),117336)
+((2,185),117551)
+((2,186),117282)
+((2,187),117415)
+((2,188),117439)
+((2,189),116922)
+((2,190),117302)
+((2,191),117286)
+((2,192),117406)
+((2,193),117201)
+((2,194),116961)
+((2,195),116798)
+((2,196),116905)
+((2,197),117413)
+((2,198),117301)
+((2,199),117223)
+((2,200),117283)
+((2,201),117797)
+((2,202),117172)
+((2,203),117087)
+((2,204),117579)
+((2,205),117686)
+((2,206),116970)
+((2,207),117481)
+((2,208),116964)
+((2,209),117228)
+((2,210),117103)
+((2,211),117121)
+((2,212),116736)
+((2,213),117289)
+((2,214),117146)
+((2,215),117360)
+((2,216),117469)
+((2,217),117156)
+((2,218),117064)
+((2,219),116901)
+((2,220),117187)
+((2,221),117272)
+((2,222),117115)
+((2,223),116807)
+((2,224),117264)
+((2,225),116893)
+((2,226),116964)
+((2,227),117108)
+((2,228),117098)
+((2,229),117148)
+((2,230),117081)
+((2,231),116852)
+((2,232),117049)
+((2,233),117151)
+((2,234),117048)
+((2,235),117546)
+((2,236),117306)
+((2,237),117176)
+((2,238),117100)
+((2,239),117212)
+((2,240),117052)
+((2,241),117504)
+((2,242),117086)
+((2,243),117113)
+((2,244),116862)
+((2,245),117307)
+((2,246),116691)
+((2,247),117112)
+((2,248),117157)
+((2,249),116470)
+((2,250),116857)
+((2,251),117047)
+((2,252),117125)
+((2,253),116835)
+((2,254),117335)
+((2,255),117357)
+((2,0),117148)
+((2,1),116742)
+((3,2),117295)
+((3,3),117636)
+((3,4),116947)
+((3,5),117484)
+((3,6),116871)
+((3,7),117007)
+((3,8),117389)
+((3,9),117160)
+((3,10),117487)
+((3,11),117060)
+((3,12),117521)
+((3,13),117143)
+((3,14),117380)
+((3,15),117357)
+((3,16),117260)
+((3,17),117676)
+((3,18),117120)
+((3,19),117004)
+((3,20),117283)
+((3,21),117373)
+((3,22),116982)
+((3,23),117250)
+((3,24),116927)
+((3,25),117622)
+((3,26),117437)
+((3,27),116946)
+((3,28),117627)
+((3,29),116983)
+((3,30),117482)
+((3,31),117254)
+((3,32),116749)
+((3,33),116871)
+((3,34),117154)
+((3,35),116992)
+((3,36),116881)
+((3,37),117133)
+((3,38),117035)
+((3,39),116797)
+((3,40),117197)
+((3,41),117301)
+((3,42),117030)
+((3,43),117180)
+((3,44),117850)
+((3,45),117484)
+((3,46),117456)
+((3,47),117028)
+((3,48),117242)
+((3,49),117273)
+((3,50),117440)
+((3,51),117149)
+((3,52),117055)
+((3,53),117250)
+((3,54),116263)
+((3,55),117420)
+((3,56),117238)
+((3,57),116654)
+((3,58),116835)
+((3,59),117005)
+((3,60),117197)
+((3,61),117296)
+((3,62),116858)
+((3,63),116842)
+((3,64),117357)
+((3,65),116845)
+((3,66),117608)
+((3,67),117133)
+((3,68),117067)
+((3,69),117330)
+((3,70),117257)
+((3,71),117035)
+((3,72),116964)
+((3,73),117180)
+((3,74),117348)
+((3,75),117347)
+((3,76),117053)
+((3,77),117430)
+((3,78),117022)
+((3,79),117175)
+((3,80),117760)
+((3,81),116956)
+((3,82),117012)
+((3,83),117465)
+((3,84),117269)
+((3,85),117161)
+((3,86),117378)
+((3,87),117174)
+((3,88),116834)
+((3,89),117721)
+((3,90),117166)
+((3,91),117508)
+((3,92),117274)
+((3,93),117133)
+((3,94),116871)
+((3,95),116971)
+((3,96),116913)
+((3,97),116827)
+((3,98),117356)
+((3,99),116906)
+((3,100),116940)
+((3,101),116751)
+((3,102),117038)
+((3,103),116898)
+((3,104),117203)
+((3,105),117244)
+((3,106),116721)
+((3,107),117354)
+((3,108),116790)
+((3,109),117239)
+((3,110),117235)
+((3,111),117036)
+((3,112),117002)
+((3,113),116874)
+((3,114),117078)
+((3,115),117331)
+((3,116),117198)
+((3,117),117152)
+((3,118),117372)
+((3,119),117499)
+((3,120),117268)
+((3,121),116782)
+((3,122),117140)
+((3,123),116864)
+((3,124),116565)
+((3,125),117105)
+((3,126),117199)
+((3,127),117087)
+((3,128),117179)
+((3,129),117181)
+((3,130),117208)
+((3,131),117383)
+((3,132),117668)
+((3,133),117393)
+((3,134),117291)
+((3,135),117531)
+((3,136),117116)
+((3,137),117013)
+((3,138),117043)
+((3,139),117474)
+((3,140),117239)
+((3,141),116919)
+((3,142),117295)
+((3,143),117417)
+((3,144),117019)
+((3,145),117255)
+((3,146),117239)
+((3,147),117416)
+((3,148),117428)
+((3,149),117018)
+((3,150),117272)
+((3,151),117299)
+((3,152),117249)
+((3,153),117485)
+((3,154),117397)
+((3,155),117430)
+((3,156),117111)
+((3,157),117321)
+((3,158),117126)
+((3,159),117448)
+((3,160),117231)
+((3,161),117241)
+((3,162),117511)
+((3,163),117249)
+((3,164),117114)
+((3,165),116859)
+((3,166),117219)
+((3,167),116665)
+((3,168),117354)
+((3,169),117139)
+((3,170),117247)
+((3,171),117377)
+((3,172),117065)
+((3,173),116939)
+((3,174),117232)
+((3,175),117677)
+((3,176),116755)
+((3,177),117266)
+((3,178),117372)
+((3,179),117002)
+((3,180),117227)
+((3,181),116903)
+((3,182),116919)
+((3,183),117139)
+((3,184),117607)
+((3,185),117341)
+((3,186),117406)
+((3,187),117011)
+((3,188),117312)
+((3,189),116964)
+((3,190),116847)
+((3,191),117543)
+((3,192),116897)
+((3,193),117397)
+((3,194),117648)
+((3,195),117318)
+((3,196),117209)
+((3,197),117366)
+((3,198),117279)
+((3,199),117570)
+((3,200),117142)
+((3,201),116870)
+((3,202),117841)
+((3,203),117043)
+((3,204),117275)
+((3,205),117278)
+((3,206),116728)
+((3,207),117001)
+((3,208),117292)
+((3,209),117312)
+((3,210),117126)
+((3,211),116965)
+((3,212),116660)
+((3,213),117027)
+((3,214),117425)
+((3,215),117159)
+((3,216),117220)
+((3,217),117577)
+((3,218),117305)
+((3,219),117186)
+((3,220),117544)
+((3,221),117467)
+((3,222),117020)
+((3,223),117598)
+((3,224),117846)
+((3,225),117236)
+((3,226),116991)
+((3,227),117291)
+((3,228),117093)
+((3,229),117542)
+((3,230),116948)
+((3,231),116746)
+((3,232),117459)
+((3,233),116947)
+((3,234),117309)
+((3,235),117039)
+((3,236),117004)
+((3,237),117208)
+((3,238),117142)
+((3,239),116748)
+((3,240),117352)
+((3,241),117077)
+((3,242),117154)
+((3,243),117330)
+((3,244),117096)
+((3,245),117084)
+((3,246),117206)
+((3,247),117251)
+((3,248),116641)
+((3,249),117638)
+((3,250),117491)
+((3,251),117055)
+((3,252),117551)
+((3,253),116772)
+((3,254),116932)
+((3,255),116821)
+((3,0),117131)
+((3,1),117639)
+((1,2),117054)
+((1,3),117238)
+((1,4),117277)
+((1,5),117354)
+((1,6),117363)
+((1,7),117273)
+((1,8),117410)
+((1,9),117095)
+((1,10),116807)
+((1,11),117265)
+((1,12),117764)
+((1,13),116921)
+((1,14),117639)
+((1,15),117063)
+((1,16),117177)
+((1,17),116889)
+((1,18),117127)
+((1,19),117239)
+((1,20),117158)
+((1,21),117004)
+((1,22),117231)
+((1,23),117468)
+((1,24),116942)
+((1,25),117327)
+((1,26),117051)
+((1,27),116808)
+((1,28),116746)
+((1,29),116757)
+((1,30),117139)
+((1,31),117432)
+((1,32),117401)
+((1,33),116909)
+((1,34),117180)
+((1,35),117197)
+((1,36),116868)
+((1,37),116973)
+((1,38),117138)
+((1,39),117023)
+((1,40),117286)
+((1,41),117229)
+((1,42),116944)
+((1,43),117251)
+((1,44),117391)
+((1,45),117035)
+((1,46),117237)
+((1,47),117424)
+((1,48),117201)
+((1,49),116777)
+((1,50),116929)
+((1,51),117233)
+((1,52),117019)
+((1,53),117260)
+((1,54),117090)
+((1,55),117074)
+((1,56),117283)
+((1,57),117100)
+((1,58),117414)
+((1,59),117435)
+((1,60),116963)
+((1,61),117142)
+((1,62),116992)
+((1,63),117436)
+((1,64),117423)
+((1,65),117294)
+((1,66),117127)
+((1,67),117268)
+((1,68),116746)
+((1,69),117276)
+((1,70),117488)
+((1,71),117451)
+((1,72),117425)
+((1,73),117365)
+((1,74),117352)
+((1,75),117205)
+((1,76),117562)
+((1,77),117274)
+((1,78),117651)
+((1,79),117387)
+((1,80),117301)
+((1,81),116588)
+((1,82),117303)
+((1,83),117566)
+((1,84),116972)
+((1,85),116878)
+((1,86),116746)
+((1,87),117166)
+((1,88),117006)
+((1,89),117068)
+((1,90),117045)
+((1,91),117128)
+((1,92),117119)
+((1,93),117477)
+((1,94),116868)
+((1,95),117131)
+((1,96),117368)
+((1,97),117560)
+((1,98),117358)
+((1,99),117295)
+((1,100),117652)
+((1,101),117229)
+((1,102),117316)
+((1,103),117354)
+((1,104),117326)
+((1,105),117118)
+((1,106),117271)
+((1,107),117576)
+((1,108),117732)
+((1,109),117451)
+((1,110),117409)
+((1,111),117511)
+((1,112),116978)
+((1,113),116828)
+((1,114),117221)
+((1,115),117596)
+((1,116),117463)
+((1,117),116766)
+((1,118),117437)
+((1,119),117480)
+((1,120),117425)
+((1,121),117063)
+((1,122),117166)
+((1,123),116936)
+((1,124),117136)
+((1,125),117052)
+((1,126),117121)
+((1,127),116977)
+((1,128),117316)
+((1,129),117598)
+((1,130),117310)
+((1,131),117340)
+((1,132),117311)
+((1,133),117666)
+((1,134),117089)
+((1,135),116998)
+((1,136),116868)
+((1,137),116855)
+((1,138),116725)
+((1,139),117491)
+((1,140),116830)
+((1,141),116630)
+((1,142),117233)
+((1,143),117554)
+((1,144),117338)
+((1,145),117112)
+((1,146),116948)
+((1,147),116862)
+((1,148),116564)
+((1,149),116803)
+((1,150),117179)
+((1,151),117351)
+((1,152),117163)
+((1,153),116916)
+((1,154),117052)
+((1,155),117359)
+((1,156),116983)
+((1,157),117073)
+((1,158),116998)
+((1,159),117071)
+((1,160),117060)
+((1,161),116990)
+((1,162),117424)
+((1,163),116976)
+((1,164),117300)
+((1,165),117333)
+((1,166),117179)
+((1,167),117436)
+((1,168),117258)
+((1,169),117185)
+((1,170),117531)
+((1,171),117471)
+((1,172),117395)
+((1,173),116789)
+((1,174),117185)
+((1,175),117581)
+((1,176),117066)
+((1,177),116854)
+((1,178),116764)
+((1,179),117055)
+((1,180),116967)
+((1,181),117429)
+((1,182),117039)
+((1,183),116969)
+((1,184),117041)
+((1,185),117016)
+((1,186),116728)
+((1,187),117001)
+((1,188),117319)
+((1,189),117094)
+((1,190),117311)
+((1,191),116966)
+((1,192),116842)
+((1,193),117032)
+((1,194),117458)
+((1,195),117292)
+((1,196),117515)
+((1,197),116923)
+((1,198),116941)
+((1,199),117465)
+((1,200),117160)
+((1,201),117423)
+((1,202),117260)
+((1,203),117186)
+((1,204),117188)
+((1,205),117030)
+((1,206),117311)
+((1,207),117540)
+((1,208),116877)
+((1,209),116924)
+((1,210),117033)
+((1,211),117387)
+((1,212),116949)
+((1,213),117015)
+((1,214),117376)
+((1,215),117029)
+((1,216),117177)
+((1,217),117367)
+((1,218),117418)
+((1,219),117107)
+((1,220),117356)
+((1,221),117039)
+((1,222),117162)
+((1,223),117447)
+((1,224),117087)
+((1,225),117027)
+((1,226),117299)
+((1,227),117638)
+((1,228),117467)
+((1,229),117662)
+((1,230),117429)
+((1,231),117043)
+((1,232),117541)
+((1,233),116951)
+((1,234),117325)
+((1,235),117389)
+((1,236),117265)
+((1,237),117189)
+((1,238),117270)
+((1,239),117590)
+((1,240),117280)
+((1,241),117258)
+((1,242),116772)
+((1,243),117632)
+((1,244),116702)
+((1,245),116907)
+((1,246),117673)
+((1,247),117157)
+((1,248),116975)
+((1,249),117155)
+((1,250),117114)
+((1,251),117000)
+((1,252),117181)
+((1,253),117243)
+((1,254),117057)
+((1,255),117097)
+((1,0),117179)
+((1,1),117240)
+2020-04-16 10:16:16,518 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,522 [main] WARN  org.apache.pig.newplan.BaseOperatorPlan - Encountered Warning IMPLICIT_CAST_TO_LONG 9 time(s).
+2020-04-16 10:16:16,523 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.textoutputformat.separator is deprecated. Instead, use mapreduce.output.textoutputformat.separator
+2020-04-16 10:16:16,536 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: GROUP_BY,DISTINCT,UNION
+2020-04-16 10:16:16,549 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,550 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2020-04-16 10:16:16,550 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
+2020-04-16 10:16:16,564 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,578 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,593 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,606 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,621 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,635 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,649 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,662 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,685 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,692 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2020-04-16 10:16:16,693 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.CombinerOptimizerUtil - Choosing to move algebraic foreach to combiner
+2020-04-16 10:16:16,695 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 3
+2020-04-16 10:16:16,696 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - Merged 1 diamond splitter.
+2020-04-16 10:16:16,696 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - Merged 1 out of total 2 MR operators.
+2020-04-16 10:16:16,696 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 2
+2020-04-16 10:16:16,703 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:16:16,704 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,707 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2020-04-16 10:16:16,708 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2020-04-16 10:16:16,708 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2020-04-16 10:16:16,708 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2020-04-16 10:16:16,710 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=963974400
+2020-04-16 10:16:16,710 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2020-04-16 10:16:16,710 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2020-04-16 10:16:16,747 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/pig-0.16.0-core-h2.jar to DistributedCache through /tmp/temp-2073863482/tmp1810594907/pig-0.16.0-core-h2.jar
+2020-04-16 10:16:16,760 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp-2073863482/tmp-302755916/automaton-1.11-8.jar
+2020-04-16 10:16:16,770 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp-2073863482/tmp-71577885/antlr-runtime-3.4.jar
+2020-04-16 10:16:16,781 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/joda-time-2.9.3.jar to DistributedCache through /tmp/temp-2073863482/tmp-424041911/joda-time-2.9.3.jar
+2020-04-16 10:16:16,782 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2020-04-16 10:16:16,783 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2020-04-16 10:16:16,783 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2020-04-16 10:16:16,783 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2020-04-16 10:16:16,797 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2020-04-16 10:16:16,798 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:16:16,810 [JobControl] WARN  org.apache.hadoop.mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2020-04-16 10:16:16,817 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2020-04-16 10:16:16,818 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-16 10:16:16,818 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2020-04-16 10:16:16,819 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 3
+2020-04-16 10:16:16,820 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2020-04-16 10:16:16,821 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-16 10:16:16,821 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2020-04-16 10:16:16,822 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 3
+2020-04-16 10:16:16,822 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2020-04-16 10:16:16,823 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-16 10:16:16,823 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2020-04-16 10:16:16,824 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 3
+2020-04-16 10:16:16,843 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:9
+2020-04-16 10:16:16,859 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1587057250120_0003
+2020-04-16 10:16:16,861 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2020-04-16 10:16:16,872 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1587057250120_0003
+2020-04-16 10:16:16,874 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://comet-19-12.ibnet:8088/proxy/application_1587057250120_0003/
+2020-04-16 10:16:17,297 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1587057250120_0003
+2020-04-16 10:16:17,298 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases H,K,O1,O2,O3,O4,U,by_counter
+2020-04-16 10:16:17,298 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: H[1,4],O1[-1,-1],O2[3,5],U[6,4],K[8,4],by_counter[7,13],H[1,4],O1[-1,-1],O3[4,5],H[1,4],O1[-1,-1],O4[5,5] C: K[8,4],by_counter[7,13] R: K[8,4]
+2020-04-16 10:16:17,301 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2020-04-16 10:16:17,301 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0003]
+2020-04-16 10:16:36,352 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 4% complete
+2020-04-16 10:16:36,352 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0003]
+2020-04-16 10:16:51,369 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 9% complete
+2020-04-16 10:16:51,370 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0003]
+2020-04-16 10:17:01,878 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 13% complete
+2020-04-16 10:17:01,878 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0003]
+2020-04-16 10:17:09,385 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 17% complete
+2020-04-16 10:17:09,385 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0003]
+2020-04-16 10:17:36,913 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 21% complete
+2020-04-16 10:17:36,913 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0003]
+2020-04-16 10:17:41,917 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 25% complete
+2020-04-16 10:17:41,917 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0003]
+2020-04-16 10:17:43,919 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 31% complete
+2020-04-16 10:17:43,919 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0003]
+2020-04-16 10:17:45,921 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 50% complete
+2020-04-16 10:17:45,921 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0003]
+2020-04-16 10:17:46,925 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:17:46,930 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:17:46,994 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:17:46,997 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:17:47,019 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:17:47,022 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:17:47,042 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2020-04-16 10:17:47,042 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2020-04-16 10:17:47,042 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2020-04-16 10:17:47,042 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2020-04-16 10:17:47,045 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=10874
+2020-04-16 10:17:47,045 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2020-04-16 10:17:47,045 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2020-04-16 10:17:47,083 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/pig-0.16.0-core-h2.jar to DistributedCache through /tmp/temp-2073863482/tmp1951114434/pig-0.16.0-core-h2.jar
+2020-04-16 10:17:47,093 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp-2073863482/tmp109981874/automaton-1.11-8.jar
+2020-04-16 10:17:47,103 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp-2073863482/tmp311239309/antlr-runtime-3.4.jar
+2020-04-16 10:17:47,114 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/joda-time-2.9.3.jar to DistributedCache through /tmp/temp-2073863482/tmp816331111/joda-time-2.9.3.jar
+2020-04-16 10:17:47,115 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2020-04-16 10:17:47,115 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2020-04-16 10:17:47,115 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2020-04-16 10:17:47,115 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2020-04-16 10:17:47,115 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting identity combiner class.
+2020-04-16 10:17:47,120 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2020-04-16 10:17:47,122 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:17:47,128 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2020-04-16 10:17:47,136 [JobControl] WARN  org.apache.hadoop.mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2020-04-16 10:17:47,144 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2020-04-16 10:17:47,144 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2020-04-16 10:17:47,144 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2020-04-16 10:17:47,162 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2020-04-16 10:17:47,179 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1587057250120_0004
+2020-04-16 10:17:47,181 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2020-04-16 10:17:47,190 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1587057250120_0004
+2020-04-16 10:17:47,192 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://comet-19-12.ibnet:8088/proxy/application_1587057250120_0004/
+2020-04-16 10:17:47,621 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1587057250120_0004
+2020-04-16 10:17:47,621 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases 
+2020-04-16 10:17:47,621 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M:  C:  R: 
+2020-04-16 10:17:54,686 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 75% complete
+2020-04-16 10:17:54,687 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0004]
+2020-04-16 10:17:59,690 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1587057250120_0004]
+2020-04-16 10:18:02,695 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:18:02,698 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:18:02,738 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:18:02,740 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:18:02,757 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:18:02,759 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:18:02,775 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2020-04-16 10:18:02,778 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.SimplePigStats - Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+2.6.0	0.16.0	varshini	2020-04-16 10:16:16	2020-04-16 10:18:02	GROUP_BY,DISTINCT,UNION
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Maps	Reduces	MaxMapTime	MinMapTime	AvgMapTime	MedianMapTime	MaxReduceTime	MinReduceTime	AvgReduceTime	MedianReducetime	Alias	Feature	Outputs
+job_1587057250120_0003	9	1	81	31	64	79	49	49	49	49	H,K,O1,O2,O3,O4,U,by_counter	GROUP_BY,COMBINER	
+job_1587057250120_0004	1	1	1	1	1	1	2	2	2	2		DISTINCT	/user/varshini/output,
+
+Input(s):
+Successfully read 30000000 records from: "/user/varshini/pixels-large.txt"
+Successfully read 30000000 records from: "/user/varshini/pixels-large.txt"
+Successfully read 30000000 records from: "/user/varshini/pixels-large.txt"
+
+Output(s):
+Successfully stored 768 records (11190 bytes) in: "/user/varshini/output"
+
+Counters:
+Total records written : 768
+Total bytes written : 11190
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_1587057250120_0003	->	job_1587057250120_0004,
+job_1587057250120_0004
+
+
+2020-04-16 10:18:02,779 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:18:02,781 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:18:02,804 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:18:02,806 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:18:02,821 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:18:02,822 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:18:02,839 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:18:02,841 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:18:02,854 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:18:02,856 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:18:02,870 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-12.ibnet/10.22.251.43:8032
+2020-04-16 10:18:02,872 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2020-04-16 10:18:02,884 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+2020-04-16 10:18:02,899 [main] INFO  org.apache.pig.Main - Pig script completed in 3 minutes, 40 seconds and 909 milliseconds (220909 ms)
+chown: changing ownership of ‘/tmp’: Operation not permitted
+stopping historyserver
+stopping yarn daemons
+stopping resourcemanager
+comet-19-12.ibnet: stopping nodemanager
+comet-19-12.ibnet: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+comet-19-15.ibnet: stopping nodemanager
+comet-19-15.ibnet: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+no proxyserver to stop
+Stopping namenodes on [comet-19-12.ibnet]
+comet-19-12.ibnet: stopping namenode
+comet-19-12.ibnet: stopping datanode
+comet-19-15.ibnet: stopping datanode
+Stopping secondary namenodes [comet-19-12.ibnet]
+comet-19-12.ibnet: stopping secondarynamenode
+Copying Hadoop logs back to /home/varshini/cometcluster/logs...
+‘/scratch/varshini/32668654/logs’ -> ‘/home/varshini/cometcluster/logs’
+‘/scratch/varshini/32668654/logs/userlogs’ -> ‘/home/varshini/cometcluster/logs/userlogs’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0004’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003/syslog’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009/stderr’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009/stderr’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009/stdout’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009/stdout’
+‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009/syslog’ -> ‘/home/varshini/cometcluster/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009/syslog’
+‘/scratch/varshini/32668654/logs/hadoop-varshini-datanode-comet-19-12.sdsc.edu.log’ -> ‘/home/varshini/cometcluster/logs/hadoop-varshini-datanode-comet-19-12.sdsc.edu.log’
+‘/scratch/varshini/32668654/logs/yarn-varshini-resourcemanager-comet-19-12.out’ -> ‘/home/varshini/cometcluster/logs/yarn-varshini-resourcemanager-comet-19-12.out’
+‘/scratch/varshini/32668654/logs/hadoop-varshini-secondarynamenode-comet-19-12.sdsc.edu.log’ -> ‘/home/varshini/cometcluster/logs/hadoop-varshini-secondarynamenode-comet-19-12.sdsc.edu.log’
+‘/scratch/varshini/32668654/logs/SecurityAuth-varshini.audit’ -> ‘/home/varshini/cometcluster/logs/SecurityAuth-varshini.audit’
+‘/scratch/varshini/32668654/logs/hadoop-varshini-namenode-comet-19-12.sdsc.edu.log’ -> ‘/home/varshini/cometcluster/logs/hadoop-varshini-namenode-comet-19-12.sdsc.edu.log’
+‘/scratch/varshini/32668654/logs/yarn-varshini-nodemanager-comet-19-12.sdsc.edu.out’ -> ‘/home/varshini/cometcluster/logs/yarn-varshini-nodemanager-comet-19-12.sdsc.edu.out’
+‘/scratch/varshini/32668654/logs/yarn-varshini-nodemanager-comet-19-12.sdsc.edu.log’ -> ‘/home/varshini/cometcluster/logs/yarn-varshini-nodemanager-comet-19-12.sdsc.edu.log’
+‘/scratch/varshini/32668654/logs/hadoop-varshini-namenode-comet-19-12.sdsc.edu.out’ -> ‘/home/varshini/cometcluster/logs/hadoop-varshini-namenode-comet-19-12.sdsc.edu.out’
+‘/scratch/varshini/32668654/logs/hadoop-varshini-datanode-comet-19-12.sdsc.edu.out’ -> ‘/home/varshini/cometcluster/logs/hadoop-varshini-datanode-comet-19-12.sdsc.edu.out’
+‘/scratch/varshini/32668654/logs/yarn-varshini-resourcemanager-comet-19-12.log’ -> ‘/home/varshini/cometcluster/logs/yarn-varshini-resourcemanager-comet-19-12.log’
+‘/scratch/varshini/32668654/logs/hadoop-varshini-secondarynamenode-comet-19-12.sdsc.edu.out’ -> ‘/home/varshini/cometcluster/logs/hadoop-varshini-secondarynamenode-comet-19-12.sdsc.edu.out’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/appcache’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/11/.tmp_automaton-1.11-8.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/11/automaton-1.11-8.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/11’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/23/automaton-1.11-8.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/23/.tmp_automaton-1.11-8.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/23’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/24/joda-time-2.9.3.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/24/.tmp_joda-time-2.9.3.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/24’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/16/joda-time-2.9.3.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/16/.tmp_joda-time-2.9.3.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/16’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/12/joda-time-2.9.3.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/12/.tmp_joda-time-2.9.3.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/12’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/18/pig-0.16.0-core-h2.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/18/.tmp_pig-0.16.0-core-h2.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/18’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/20/joda-time-2.9.3.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/20/.tmp_joda-time-2.9.3.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/20’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/15/automaton-1.11-8.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/15/.tmp_automaton-1.11-8.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/15’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/25/.tmp_antlr-runtime-3.4.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/25/antlr-runtime-3.4.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/25’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/17/.tmp_antlr-runtime-3.4.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/17/antlr-runtime-3.4.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/17’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/10/.tmp_pig-0.16.0-core-h2.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/10/pig-0.16.0-core-h2.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/10’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/22/.tmp_pig-0.16.0-core-h2.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/22/pig-0.16.0-core-h2.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/22’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/14/.tmp_pig-0.16.0-core-h2.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/14/pig-0.16.0-core-h2.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/14’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/19/.tmp_automaton-1.11-8.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/19/automaton-1.11-8.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/19’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/13/.tmp_antlr-runtime-3.4.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/13/antlr-runtime-3.4.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/13’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/21/.tmp_antlr-runtime-3.4.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/21/antlr-runtime-3.4.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/21’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/nmPrivate’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/filecache’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch’
+removed ‘/scratch/varshini/32668654/tmp/dfs/namesecondary/current/fsimage_0000000000000000091’
+removed ‘/scratch/varshini/32668654/tmp/dfs/namesecondary/current/fsimage_0000000000000000000.md5’
+removed ‘/scratch/varshini/32668654/tmp/dfs/namesecondary/current/fsimage_0000000000000000091.md5’
+removed ‘/scratch/varshini/32668654/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000091’
+removed ‘/scratch/varshini/32668654/tmp/dfs/namesecondary/current/VERSION’
+removed ‘/scratch/varshini/32668654/tmp/dfs/namesecondary/current/fsimage_0000000000000000000’
+removed directory: ‘/scratch/varshini/32668654/tmp/dfs/namesecondary/current’
+removed directory: ‘/scratch/varshini/32668654/tmp/dfs/namesecondary’
+removed directory: ‘/scratch/varshini/32668654/tmp/dfs’
+removed directory: ‘/scratch/varshini/32668654/tmp’
+removed ‘/scratch/varshini/32668654/namenode_data/current/fsimage_0000000000000000000’
+removed ‘/scratch/varshini/32668654/namenode_data/current/seen_txid’
+removed ‘/scratch/varshini/32668654/namenode_data/current/VERSION’
+removed ‘/scratch/varshini/32668654/namenode_data/current/edits_inprogress_0000000000000000092’
+removed ‘/scratch/varshini/32668654/namenode_data/current/edits_0000000000000000001-0000000000000000091’
+removed ‘/scratch/varshini/32668654/namenode_data/current/fsimage_0000000000000000000.md5’
+removed ‘/scratch/varshini/32668654/namenode_data/current/fsimage_0000000000000000091.md5’
+removed ‘/scratch/varshini/32668654/namenode_data/current/fsimage_0000000000000000091’
+removed directory: ‘/scratch/varshini/32668654/namenode_data/current’
+removed directory: ‘/scratch/varshini/32668654/namenode_data’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/VERSION’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741865’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741865_1041.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741839’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741852_1028.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741876’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741827’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741866’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741878’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741840’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741840_1016.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741876_1052.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741853_1029.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741853’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741826’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741839_1015.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741866_1042.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741879_1055.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741827_1003.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741852’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741825’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741879’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741878_1054.meta’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/dfsUsed’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/rbw’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/VERSION’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/dncp_block_verification.log.prev’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/tmp’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/dncp_block_verification.log.curr’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data’
+removed directory: ‘/scratch/varshini/32668654/pids’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006/stdout’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000006’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000005’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002/syslog’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000002’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008/stdout’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000008’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007/stdout’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000007’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009/syslog’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000009’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000003’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004/stdout’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000004’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000003’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000001’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000002’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002/container_1587057250120_0002_01_000003’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0002’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000006’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000008’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000002’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000005’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014/syslog’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000014’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000007’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013/syslog’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000013’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000004’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003/stdout’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000003’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009/syslog’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000009’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs’
+removed ‘/scratch/varshini/32668654/logs/hadoop-varshini-datanode-comet-19-12.sdsc.edu.log’
+removed ‘/scratch/varshini/32668654/logs/yarn-varshini-resourcemanager-comet-19-12.out’
+removed ‘/scratch/varshini/32668654/logs/hadoop-varshini-secondarynamenode-comet-19-12.sdsc.edu.log’
+removed ‘/scratch/varshini/32668654/logs/SecurityAuth-varshini.audit’
+removed ‘/scratch/varshini/32668654/logs/hadoop-varshini-namenode-comet-19-12.sdsc.edu.log’
+removed ‘/scratch/varshini/32668654/logs/yarn-varshini-nodemanager-comet-19-12.sdsc.edu.out’
+removed ‘/scratch/varshini/32668654/logs/yarn-varshini-nodemanager-comet-19-12.sdsc.edu.log’
+removed ‘/scratch/varshini/32668654/logs/hadoop-varshini-namenode-comet-19-12.sdsc.edu.out’
+removed ‘/scratch/varshini/32668654/logs/hadoop-varshini-datanode-comet-19-12.sdsc.edu.out’
+removed ‘/scratch/varshini/32668654/logs/yarn-varshini-resourcemanager-comet-19-12.log’
+removed ‘/scratch/varshini/32668654/logs/hadoop-varshini-secondarynamenode-comet-19-12.sdsc.edu.out’
+removed directory: ‘/scratch/varshini/32668654/logs’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/nmPrivate’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/appcache’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/14/pig-0.16.0-core-h2.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/14/.tmp_pig-0.16.0-core-h2.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/14’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/21/.tmp_antlr-runtime-3.4.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/21/antlr-runtime-3.4.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/21’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/13/.tmp_antlr-runtime-3.4.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/13/antlr-runtime-3.4.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/13’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/19/.tmp_automaton-1.11-8.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/19/automaton-1.11-8.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/19’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/17/.tmp_antlr-runtime-3.4.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/17/antlr-runtime-3.4.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/17’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/10/.tmp_pig-0.16.0-core-h2.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/10/pig-0.16.0-core-h2.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/10’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/20/joda-time-2.9.3.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/20/.tmp_joda-time-2.9.3.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/20’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/18/pig-0.16.0-core-h2.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/18/.tmp_pig-0.16.0-core-h2.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/18’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/12/joda-time-2.9.3.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/12/.tmp_joda-time-2.9.3.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/12’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/15/.tmp_automaton-1.11-8.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/15/automaton-1.11-8.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/15’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/11/.tmp_automaton-1.11-8.jar.crc’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/11/automaton-1.11-8.jar’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/11’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/16/joda-time-2.9.3.jar’
+removed ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/16/.tmp_joda-time-2.9.3.jar.crc’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache/16’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini/filecache’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache/varshini’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/usercache’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch/filecache’
+removed directory: ‘/scratch/varshini/32668654/mapred_scratch’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/VERSION’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/dncp_block_verification.log.curr’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/tmp’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/VERSION’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/rbw’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741865’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741866_1042.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741879_1055.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741876’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741839_1015.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741839’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741827’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741866’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741840’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741878_1054.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741878’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741853’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741827_1003.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741826’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741852_1028.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741865_1041.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741825’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741852’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741840_1016.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741853_1029.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741876_1052.meta’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0/blk_1073741879’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0/subdir0’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized/subdir0’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/finalized’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current/dfsUsed’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/current’
+removed ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526/dncp_block_verification.log.prev’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current/BP-1007223120-198.202.119.67-1587057231526’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data/current’
+removed directory: ‘/scratch/varshini/32668654/hdfs_data’
+removed directory: ‘/scratch/varshini/32668654/pids’
+removed ‘/scratch/varshini/32668654/logs/yarn-varshini-nodemanager-comet-19-15.sdsc.edu.out’
+removed ‘/scratch/varshini/32668654/logs/hadoop-varshini-datanode-comet-19-15.sdsc.edu.out’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000001/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000001/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000001/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000001’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000002/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000002/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000002/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004/container_1587057250120_0004_01_000002’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0004’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000014/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000014/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000014/stdout’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000014’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000013/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000013/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000013/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000013’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000010/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000010/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000010/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000010’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000001/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000001/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000001/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000001’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000012/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000012/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000012/syslog’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000012’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000015/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000015/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000015/stdout’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000015’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000011/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000011/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000011/syslog’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003/container_1587057250120_0003_01_000011’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0003’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000015/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000015/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000015/syslog’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000015’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000001/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000001/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000001/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000001’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000012/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000012/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000012/stderr’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000012’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000011/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000011/stdout’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000011/syslog’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000011’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000010/stderr’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000010/syslog’
+removed ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000010/stdout’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001/container_1587057250120_0001_01_000010’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs/application_1587057250120_0001’
+removed directory: ‘/scratch/varshini/32668654/logs/userlogs’
+removed ‘/scratch/varshini/32668654/logs/SecurityAuth-varshini.audit’
+removed ‘/scratch/varshini/32668654/logs/hadoop-varshini-datanode-comet-19-15.sdsc.edu.log’
+removed ‘/scratch/varshini/32668654/logs/yarn-varshini-nodemanager-comet-19-15.sdsc.edu.log’
+removed directory: ‘/scratch/varshini/32668654/logs’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/jsp’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/.active’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6077120588483798963/jsp’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6077120588483798963/.active’
+removed directory: ‘/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6077120588483798963’
+removed directory: ‘/tmp/Jetty_comet.19.12_ibnet_50090_secondary____.apvbps/jsp’
+removed directory: ‘/tmp/Jetty_comet.19.12_ibnet_50090_secondary____.apvbps/.active’
+removed directory: ‘/tmp/Jetty_comet.19.12_ibnet_50090_secondary____.apvbps’
