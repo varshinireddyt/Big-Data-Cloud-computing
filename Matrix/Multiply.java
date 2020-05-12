@@ -1,3 +1,4 @@
+// Refer: http://www.mathcs.emory.edu/~cheung/Courses/554/Syllabus/9-parallel/matrix-mult.html
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
